@@ -259,3 +259,44 @@ footer {
 .btn-primary {
     transition: all 0.3s ease;
 }
+/* --- Responsividade para Telemóvel --- */
+@media (max-width: 768px) {
+    /* Ajusta o Hero para empilhar a imagem e o texto verticalmente */
+    .hero-split {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Faz com que as grelhas passem a ter apenas 1 coluna */
+    .skills-grid,
+    .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajusta a barra de navegação para não ficar apertada */
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Ajusta o card de contactos no footer */
+    .contactos-card {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .section {
+        padding: 3rem 1rem;
+    }
+}
