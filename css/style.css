@@ -5,7 +5,11 @@
     --color-fundo-site: #f4f4f4;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Sora', sans-serif;
@@ -14,8 +18,13 @@ body {
     line-height: 1.6;
 }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; }
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
 
+/* --- Header & Nav --- */
 header {
     background-color: var(--color-roxo-dark);
     padding: 1.2rem 0;
@@ -24,9 +33,21 @@ header {
     z-index: 100;
 }
 
-.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
-.logo { color: white; font-size: 1.5rem; font-weight: 800; }
-.logo .realce { color: var(--color-rosa); }
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.logo .realce {
+    color: var(--color-rosa);
+}
 
 .navbar a {
     text-decoration: none;
@@ -36,12 +57,27 @@ header {
     transition: 0.3s;
 }
 
-.navbar a:hover { color: var(--color-rosa); }
+.navbar a:hover {
+    color: var(--color-rosa);
+}
 
-.btn-cv { background-color: var(--color-rosa); color: white !important; padding: 8px 18px; border-radius: 8px; }
+.btn-cv {
+    background-color: var(--color-rosa);
+    color: white !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+}
 
-.hero { padding: 80px 0; }
-.hero-split { display: flex; align-items: center; gap: 4rem; }
+/* --- Hero Section --- */
+.hero {
+    padding: 80px 0;
+}
+
+.hero-split {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
 
 .profile-img {
     width: 320px;
@@ -52,7 +88,9 @@ header {
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.hero-text-content { flex: 1.5; }
+.hero-text-content {
+    flex: 1.5;
+}
 
 .badge-iscte {
     display: inline-block;
@@ -65,7 +103,9 @@ header {
     margin-bottom: 1.5rem;
 }
 
-.destaque-texto { color: var(--color-rosa); }
+.destaque-texto {
+    color: var(--color-rosa);
+}
 
 .btn-primary {
     display: inline-block;
@@ -78,22 +118,144 @@ header {
     font-weight: bold;
 }
 
-.separator { border: 0; height: 2px; background-color: var(--color-roxo-dark); opacity: 0.2; width: 90%; margin: 0 auto; }
+/* --- Sections Gerais --- */
+.separator {
+    border: 0;
+    height: 2px;
+    background-color: var(--color-roxo-dark);
+    opacity: 0.2;
+    width: 90%;
+    margin: 0 auto;
+}
 
-.section { padding: 5rem 2rem; }
-.section-title { border-left: 5px solid var(--color-rosa); padding-left: 15px; margin-bottom: 2rem; }
-.section-text { margin-bottom: 1.5rem; }
+.section {
+    padding: 5rem 2rem;
+}
 
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 2rem; }
-.skill-card { background: white; padding: 2rem; text-align: center; border-radius: 15px; }
-.skill-card i { font-size: 3rem; color: var(--color-roxo-dark); display: block; margin-bottom: 10px; }
+.section-title {
+    border-left: 5px solid var(--color-rosa);
+    padding-left: 15px;
+    margin-bottom: 2rem;
+}
 
-.projetos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-.projeto-card { background: white; padding: 2.5rem; border-radius: 20px; border-top: 5px solid var(--color-rosa); }
-.link-github { color: var(--color-rosa); font-weight: bold; text-decoration: none; display: block; margin-top: 1rem; }
+.section-text {
+    margin-bottom: 1.5rem;
+}
 
-footer { background-color: var(--color-roxo-dark); color: white; text-align: center; padding: 5rem 0; }
-.footer-title { color: white; margin-bottom: 2rem; }
-.social-links a { color: var(--color-rosa); margin: 0 15px; text-decoration: none; font-weight: bold; }
-.btn-footer-cv { display: inline-block; border: 2px solid var(--color-rosa); padding: 12px 25px; color: white; text-decoration: none; border-radius: 8px; margin-top: 2rem; }
-.copyright { margin-top: 3rem; font-size: 0.8rem; opacity: 0.5; }
+/* --- Skills --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: var(--color-roxo-dark);
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* --- Projetos --- */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border-top: 5px solid var(--color-rosa);
+}
+
+.link-github {
+    color: var(--color-rosa);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+/* --- Footer & Contactos --- */
+footer {
+    background-color: var(--color-roxo-dark);
+    color: white;
+    text-align: center;
+    padding: 3rem 0; /* Reduzido para ser menos massivo */
+}
+
+.contactos-card {
+    border: 1px solid rgba(247, 158, 177, 0.4);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 450px; /* Tamanho compacto */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    color: var(--color-rosa);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-footer-cv {
+    display: inline-block;
+    border: 2px solid var(--color-rosa);
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.copyright {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+/* --- Hovers & Animações --- */
+.btn-cv:hover {
+    background-color: white;
+    color: var(--color-rosa) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(247, 158, 177, 0.3);
+}
+
+.btn-footer-cv:hover {
+    background-color: var(--color-rosa);
+    color: var(--color-roxo-dark); /* Mudado para roxo para melhor leitura no fundo rosa */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cv,
+.btn-footer-cv,
+.btn-primary {
+    transition: all 0.3s ease;
+}
